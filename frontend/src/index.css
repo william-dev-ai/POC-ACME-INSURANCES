@@ -447,3 +447,50 @@ body {
 @media (max-width: 700px) {
   .kpi-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* ── Mobile (telefoon) ──────────────────────────────────── */
+@media (max-width: 480px) {
+  .main-content {
+    padding: 12px;
+  }
+
+  /* Header: verberg badge op kleine schermen */
+  .header {
+    padding: 0 12px;
+  }
+  .header-badge {
+    display: none;
+  }
+
+  /* Filter bar: elke dropdown op eigen rij */
+  .filter-bar {
+    padding: 12px;
+    gap: 8px;
+  }
+  .filter-group {
+    min-width: calc(50% - 4px);
+    flex: 1 1 calc(50% - 4px);
+  }
+  .filter-reset {
+    width: 100%;
+  }
+
+  /* KPI: 1 kolom op echte telefoons */
+  .kpi-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .kpi-value {
+    font-size: 17px;
+  }
+
+  /* Dashboard row al op 1fr, padding kleiner */
+  .dashboard-row {
+    gap: 10px;
+  }
+
+  /* AI assistent: minder hoog, zodat hij op scherm past */
+  .ai-card {
+    height: 420px;
+  }
+}
