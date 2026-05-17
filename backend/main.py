@@ -1,3 +1,4 @@
+# ACME Insurances Backend API - versie 1.0
 import os
 import uuid
 from typing import Optional
