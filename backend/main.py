@@ -16,7 +16,7 @@ app = FastAPI(title="ACME Insurances — Bedrijfskosten API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://poc-acme-insurances.vercel.app"],
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
