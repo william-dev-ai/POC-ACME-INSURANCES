@@ -1,4 +1,5 @@
 # ACME Insurances Backend API - versie 1.0
+# Versie: 1.0.0 | Auteur: william-dev-ai
 import os
 import uuid
 from typing import Optional
